@@ -1,0 +1,38 @@
+/*added this part below because the background was not covering the whoe page*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.background-image{
+    background: url("C:\\Users\\abdoo\\Downloads\\form-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container{
+    font-family: "DynaPuff", sans-serif;
+    font-size: .9rem;
+    color: rgba(28, 28, 28, 0.603);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(213, 212, 212, 0.607);
+    border-color: rgba(254, 254, 254, 0.616);
+    border-radius: 10px;
+}
+.form-container h1{
+    padding: 40px;
+
+}
+.form-box{
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    height:auto
+}
+.logo-section{
+    width: 100%;
+    height: 100%;
+}
