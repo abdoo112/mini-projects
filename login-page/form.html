@@ -3,29 +3,65 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="form_style.css">
 </head>
 <body>
-    <div class = "background-image">
+    <div class = "logo-side">
         <div class = "logo-section">
-
-        </div>
-        <div class  = "form-container">
-            <h1>  This is not a real online service!<br>You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</br></h1>
-            <div class = "form-box">
-                <form>
-                    <h1>Sign Up</h1>
-                    <label for = "first-name">First Name</label>
-                    <input type = "text" id = "first-name" name = "first-name" placeholder = "ex: John" required>
-                    <label for = "last-name">Last Name</label>
-                    <input type = "text" id = "last-name" name = "last-name" placeholder = "ex: Doe" required>
-                </form>
+            <div class = "logo">
+            </div>
+            <div class = "logo-text">
             </div>
         </div>
-        
     </div>
-    
+    <div class = "form-side">
+        <div class = "Title"> This is not a real online service!.<br> you know you need something like this in your life to help you realize your deepest dreams.
+        <br> Sign up <em>now</em> to get started.</br><br>You <em>know</em> you want to.</br></div>
+        <div class = "container">
+            <div class  = "title">Let's do this!</div>
+            <form>
+                <div class = "user-details">
+                    <div class = "formrow">
+                        <div class = "field">
+                            <label for = FirstName><p>First Name<span>*</span></p></label>
+                            <input type = "text" placeholder = "Enter your first name" required minlength="1">
+                        </div>
+                        <div class = "field">
+                            <label for = LastName>Last Name<span>*</span></label>
+                            <input type = "text" placeholder = "Enter your last name" required minlength="1">
+                        </div>
+                    </div>
+                    <div class = "formrow">
+                        <div class = "field">
+                            <label for = Email>Email<span>*</span></label>
+                            <input type = "email" placeholder = "Enter your email" required pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/">
+                        </div>
+                        <div class = "field">
+                            <label for = PhoneNumber>Phone Number<span>*</span></label>
+                            <input type = "number" placeholder = "ex: 0551234567" required>
+                        </div>
+                    </div>
+                    <div class = "formrow">
+                        <div class = "field">
+                            <label for = password>Password<span>*</span></label>
+                            <input type = "password" placeholder = "Minimum 6 characters (no symbols)" required pattern="unset /^[A-Za-z\d]{6,}$/ ">
+                        </div>
+                        <div class = "field">
+                            <label for = confirmPassword>Confirm Password<span>*</span></label>
+                            <input type = "password" placeholder = "Confirm your password" required pattern="unset /^[A-Za-z\d]{6,}$/ ">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class = "createButton">
+            <button type = "button"> Create Account </button>
+        </div>
+        <div class = "logIn">
+            <p>Already have an account? <span>Log in</span></p>  
+        </div>
+    </div>
 </body>

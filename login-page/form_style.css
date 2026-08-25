@@ -1,38 +1,116 @@
-/*added this part below because the background was not covering the whoe page*/
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'jersey 25', sans-serif;
 }
-.background-image{
-    background: url("C:\\Users\\abdoo\\Downloads\\form-background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+body{
+    background: url("form-background.jpg") no-repeat center center/cover;
+    display:flex;
+    margin:0;
+    height:100vh;
+}
+.logo-side{
+    width:50%;
+}
+.form-side{
+    width:60%;
+    background-color: rgba(199, 211, 253, 0.845);
+    border-radius: 5px;
+    display:flex;
+    flex-direction:column;
+    color:rgba(0, 0, 0, 0.797);
+}
+.form-side .Title{
+    padding: 20px;
+    margin-left: 20px;
+    font-size:2rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.form-side .container{
+    background-color:rgba(243, 241, 241, 0.553);
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
+    height: 40%;
+}
+.form-side .container .title{
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.form-side .container form .user-details{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 40px;
+    gap:15px;
+}
+.formrow {
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
 }
-.form-container{
-    font-family: "DynaPuff", sans-serif;
-    font-size: .9rem;
-    color: rgba(28, 28, 28, 0.603);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(213, 212, 212, 0.607);
-    border-color: rgba(254, 254, 254, 0.616);
-    border-radius: 10px;
+span{
+    color:crimson;
 }
-.form-container h1{
-    padding: 40px;
+.formrow .field {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* each field takes equal width — this is what makes them symmetric */
+}
+.formrow .field label{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.25rem;
 
 }
-.form-box{
-    background-color: rgba(255, 255, 255);
+.formrow .field input {
     width: 100%;
-    height:auto
+    height: 45px;
+    border-radius: 5px;
+    border: 3px solid white;
+    font-size: 1rem;
+    padding-left:5px;
 }
-.logo-section{
-    width: 100%;
-    height: 100%;
+.formrow .field input:focus {
+    outline: none;
+    border-color: rgb(4, 0, 255);
+}
+.formrow .field input:user-valid{
+    border-color:green ;
+}
+.formrow .field input:user-invalid{
+    border-color:rgb(255, 0, 0) ;
+}
+.form-side .createButton{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.form-side .createButton button{
+    width: 30%;
+    height: 45px;
+    background-color: rgb(118, 156, 245);
+    color:white;
+    border-color:rgb(118, 156, 245); 
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.815);
+}
+.form-side .logIn{
+    margin-left: 40px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.797);
+    font-size: 16px;
+}
+.form-side .logIn span{
+    color:rgb(118, 156, 245);
+}
+.form-side .logIn span:hover{
+    text-decoration:underline;
 }
