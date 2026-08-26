@@ -9,6 +9,7 @@ The goal of this repository is to build projects independently, strengthen my fu
 - This project was done to complete the intermediate HTML and CSS course on the odin project. 
 - Created using vanilla CSS and HTML.
 - Completely frontend based project, it has no backend logic in it.
+- Reference image for the page given in the folder form The Odin Project.
 ## Learned
 - How to use CSS properties.
 - How CSS selectors work.
