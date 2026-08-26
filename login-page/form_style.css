@@ -12,6 +12,34 @@ body{
 }
 .logo-side{
     width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.logo-section{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.715);
+    height: 150px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo-side .logo-section .logo .icon{
+    background: url("odin-lined.png") no-repeat center center;
+    background-size:contain;
+    width: 120px;
+    height: 130px;
+
+}
+.logo-side .logo-section .logo .icontitle{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    font-weight:500;
 }
 .form-side{
     width:60%;
@@ -108,9 +136,11 @@ span{
     color: rgba(0, 0, 0, 0.797);
     font-size: 16px;
 }
-.form-side .logIn span{
+.form-side .logIn a{
     color:rgb(118, 156, 245);
+    text-decoration: none; 
+    cursor: pointer;
 }
-.form-side .logIn span:hover{
+.form-side .logIn a:hover{
     text-decoration:underline;
 }
