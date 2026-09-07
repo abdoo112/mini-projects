@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <header>
+        <h1>My Library</h1>
+        <button class="add-book-btn">Add Book</button>
+    </header>
+    <div class = "container">
+        <div class = "book-card">
+            <div class = "name">
+                <p><b>NAME:</b> Book Title</p>
+            </div>
+            <div class = "author">
+                <p><b>AUTHOR:</b> Book Author</p>
+            </div>
+            <div class = "pages">
+                <p><b>PAGES:</b> 123</p>
+            </div>
+            <div class = "status">
+                <p><b>STATUS:</b> Read</p>
+            </div>
+            <div class = "buttons">
+                <button class="remove-book-btn">Remove Book</button>
+                <button class="toggle-status-btn">Change Status</button>
+            </div>
+        </div>
+    </div>
+    <dialog id="add-book-dialog">
+        <form method="dialog">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required>
+            <label for="book-author">Book Author:</label>
+            <input type="text" id="book-author" name="book-author" required>
+            <label for="book-pages">Number of Pages:</label>
+            <input type="number" id="book-pages" name="book-pages" required>
+            <label for="book-status">Read Status:</label>
+            <select id="book-status" name="book-status">
+                <option value="read">Read</option>
+                <option value="not-read">Not Read</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+    </dialog>
+</body>

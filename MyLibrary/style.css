@@ -1,0 +1,54 @@
+*{
+    font-family: 'Sansation', sans-serif;
+}
+body{
+    background-color: rgb(1, 5, 57);
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+body header{
+    color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+body header h1{
+    font-size: 3rem;
+    margin: 0 0 0 20px;
+    width: 50%;
+}
+.container{
+    flex:1;
+    padding: 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: start;
+}
+.container .book-card{
+    background-color:rgba(100, 86, 107, 0.479);
+    color: white;
+    display:flex;
+    flex-direction:column;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.book-card .buttons{
+    display:flex;
+    flex-direction:column;
+    gap: 5px;
+}
+button {
+  background-color: rgba(132, 4, 192, 0.886);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+button:hover {
+  background-color: rgba(132, 4, 192, 0.5);
+}

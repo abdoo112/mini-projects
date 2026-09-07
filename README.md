@@ -4,6 +4,7 @@ The goal of this repository is to build projects independently, strengthen my fu
 
 # Projects list
 1. login page
+2. MyLibrary
 
 # Login page
 - This project was done to complete the intermediate HTML and CSS course on the odin project. 
@@ -16,3 +17,7 @@ The goal of this repository is to build projects independently, strengthen my fu
 - How to make HTML layout based on context.
 - Form validation.
 - CSS styling.
+
+# MyLibrary
+- This project is a part of the JavaScript course offered by The Odin Project.
+- Created using CSS, HTML and JS.
