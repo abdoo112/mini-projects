@@ -14,27 +14,9 @@
         <button class="add-book-btn">Add Book</button>
     </header>
     <div class = "container">
-        <div class = "book-card">
-            <div class = "name">
-                <p><b>NAME:</b> Book Title</p>
-            </div>
-            <div class = "author">
-                <p><b>AUTHOR:</b> Book Author</p>
-            </div>
-            <div class = "pages">
-                <p><b>PAGES:</b> 123</p>
-            </div>
-            <div class = "status">
-                <p><b>STATUS:</b> Read</p>
-            </div>
-            <div class = "buttons">
-                <button class="remove-book-btn">Remove Book</button>
-                <button class="toggle-status-btn">Change Status</button>
-            </div>
-        </div>
     </div>
     <dialog id="add-book-dialog">
-        <form method="dialog">
+        <form id ="add-book-form">
             <label for="book-title">Book Title:</label>
             <input type="text" id="book-title" name="book-title" required>
             <label for="book-author">Book Author:</label>
@@ -44,9 +26,10 @@
             <label for="book-status">Read Status:</label>
             <select id="book-status" name="book-status">
                 <option value="read">Read</option>
-                <option value="not-read">Not Read</option>
+                <option value="unread">unread</option>
             </select>
             <button type="submit">Add Book</button>
         </form>
     </dialog>
+    <script src="script.js"></script>
 </body>
