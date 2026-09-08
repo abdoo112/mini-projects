@@ -110,7 +110,6 @@ addBookToLibrary("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309, "
 addBookToLibrary("The Little Prince", "Antoine de Saint-Exupéry", 96, "unread");
 addBookToLibrary("Slaughterhouse-Five", "Kurt Vonnegut", 275, "read");
 addBookToLibrary("The Road", "Cormac McCarthy", 287, "unread");
-addBookToLibrary("Frankenstein", "Mary Shelley", 280, "read");
-addBookToLibrary("Moby-Dick", "Herman Melville", 635, "unread");
+addBookToLibrary("Another one", "DJ khaled", 67, "read");
 render();
 render();
